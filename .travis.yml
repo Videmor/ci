@@ -1,2 +1,11 @@
 language: ruby
-script: 'true'
+
+env:
+  - DB=postgres
+
+services: 
+  - postgresql
+before_script:
+  - bundle exec rake db:setup
+
+script: 'bundle exec rspec'

@@ -7,7 +7,6 @@ RSpec.describe Company, type: :model do
   it { should validate_uniqueness_of(:url)}
   it { should validate_length_of(:description).is_at_least(5).is_at_most(100)  }
 
-
   describe '#change_state' do
 
     let(:company) { create(:company) }
@@ -31,7 +30,5 @@ RSpec.describe Company, type: :model do
 
     expect(company1.url).not_to eql(company2.url)
   end
-
-
 
 end
