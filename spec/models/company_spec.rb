@@ -28,7 +28,7 @@ RSpec.describe Company, type: :model do
     company1 = create(:company)
     company2 = create(:company)
 
-    expect(company1.url).to eql(company2.url)
+    expect(company1.url).not_to eql(company2.url)
   end
 
 end

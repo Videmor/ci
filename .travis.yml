@@ -1,5 +1,8 @@
 language: ruby
 
+env:
+  - DB=postgres
+
 services: 
   - postgresql
 before_script:
