@@ -1,5 +1,9 @@
 language: ruby
 
+env:
+  - DB=postgres
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
 
 before_script:
   - bundle exec rake db:setup
