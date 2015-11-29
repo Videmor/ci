@@ -1,2 +1,7 @@
 language: ruby
+
+
+before_script:
+  - rake db:setup
+
 script: 'bundle exec rspec'
