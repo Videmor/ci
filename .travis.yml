@@ -2,6 +2,6 @@ language: ruby
 
 
 before_script:
-  - rake db:setup
+  - bundle exec rake db:setup
 
 script: 'bundle exec rspec'
